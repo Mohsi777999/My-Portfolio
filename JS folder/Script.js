@@ -22,7 +22,9 @@ const htmlPercentageCounter = document.getElementById('html-percent-counter');
 const cssPercentageCounter = document.getElementById('css-percent-counter');
 const jsPercentageCounter = document.getElementById('js-percent-counter');
 const bootPercentageCounter = document.getElementById('bootstrap-percent-counter');
-const jqueryPercentageCounter = document.getElementById('jquery-percent-counter');
+const mysqlPercentageCounter = document.getElementById('mysql-percent-counter');
+const phpPercentageCounter = document.getElementById('php-percent-counter');
+const laravelPercentageCounter = document.getElementById('laravel-percent-counter');
 
 let htmlPercentage = 0;
 
@@ -68,16 +70,38 @@ const bootInterval = setInterval(() => {
   }
 }, 170);
 
-let jqueryPercentage = 0;
+let mysqlPercentage = 0;
 
-const jqueryInterval = setInterval(() => {
-  jqueryPercentage++;
-  jqueryPercentageCounter.textContent = `${jqueryPercentage}%`;
+const mysqlInterval = setInterval(() => {
+  mysqlPercentage++;
+  mysqlPercentageCounter.textContent = `${mysqlPercentage}%`;
 
-  if (jqueryPercentage === 30) {
-    clearInterval(jqueryInterval);
+  if (mysqlPercentage === 50) {
+    clearInterval(mysqlInterval);
   }
-}, 450);
+}, 180);
+
+let phpPercentage = 0;
+
+const phpInterval = setInterval(() => {
+  phpPercentage++;
+  phpPercentageCounter.textContent = `${phpPercentage}%`;
+
+  if (phpPercentage === 70) {
+    clearInterval(phpInterval);
+  }
+}, 180);
+
+let laravelPercentage = 0;
+
+const laravelInterval = setInterval(() => {
+  laravelPercentage++;
+  laravelPercentageCounter.textContent = `${laravelPercentage}%`;
+
+  if (laravelPercentage === 50) {
+    clearInterval(laravelInterval);
+  }
+}, 180);
 
 // Script For Skill Counter End Here 
 
